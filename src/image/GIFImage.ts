@@ -72,6 +72,19 @@ export class GIFImage {
     out.writeByte(0xff);
 
     //---------------------------------
+    // Graphic Descriptor
+    // http://giflib.sourceforge.net/whatsinagif/animation_and_transparency.html
+
+    out.writeByte(0x21);
+    out.writeByte(0xf9);
+    out.writeByte(0x04);
+    out.writeByte(0x01); // Transparent Color Flag
+    out.writeByte(0x00);
+    out.writeByte(0x00);
+    out.writeByte(0x00); // Transparent Color Index
+    out.writeByte(0x00);
+
+    //---------------------------------
     // Image Descriptor
 
     out.writeByte(','.charCodeAt(0));

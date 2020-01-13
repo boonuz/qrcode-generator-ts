@@ -480,9 +480,9 @@ export class QRCode {
           this.isDark(
             ~~((y - margin) / cellSize),
             ~~((x - margin) / cellSize))) {
-          gif.setPixel(x, y, 0);
-        } else {
           gif.setPixel(x, y, 1);
+        } else {
+          gif.setPixel(x, y, 0);
         }
       }
     }
