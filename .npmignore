@@ -1,8 +1,5 @@
 LICENSE
 samples
 node_modules
-
-bundles/src
-bundles/index.d.ts
-bundles/qrcodegeneratorts.min.js.map
-webpack.config.js
+src
+test

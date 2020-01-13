@@ -12,7 +12,8 @@
         "experimentalDecorators": true,
         "preserveConstEnums": true,
         "removeComments": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+         "outDir": "../js"
     },
     "files": [
         "./index.ts"
